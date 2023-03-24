@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-""" define a fuction that reads text files """
+"""
+function that writes a string to a text file
+"""
 
 
-def read_file(filename=""):
-    """a fuction to read text """
-    with open(filename, 'r', encoding='UTF8') as b:
-        print(b.read(), end='')
-
+def write_file(filename="", text=""):
+    """ module write_file """
+    with open(filename, 'w') as b:
+        return b.write(text)
