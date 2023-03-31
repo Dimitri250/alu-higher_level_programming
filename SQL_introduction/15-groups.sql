@@ -1,3 +1,6 @@
 -- list all record in the database table
-SELECT score, name FROM second_table
-WHERE name IS NOT NUMM ORDER BY score DESC;
+SELECT score, COUNT(*) AS number
+FROM hbtn_0c_0.second_table
+GROUP BY score
+ORDER BY number DESC;
+
