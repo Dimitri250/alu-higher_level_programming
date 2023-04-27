@@ -24,6 +24,4 @@ if __name__ == "__main__":
         session.delete(delete)
     # commit and close session
     session.commit()
-    session.close()
-
-    
+    session.close() 
